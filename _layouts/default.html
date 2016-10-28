@@ -5,17 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ page.title }}</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href='https://static.leadpages.net/fonts/akkurat_typeset.css' rel='stylesheet' type='text/css'>
+        <link href="https://static.leadpages.net/icons/v27/lp-icons.css" rel="stylesheet" type="text/css">
+        <link href="https://static.leadpages.net/lego/1.1.15/lego.min.css" rel="stylesheet" type="text/css">
 
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
         {% include header.html %}
         {{ content }}
-
-        <footer class="footer">
-        </footer>
+        {% include footer.html %}
     </body>
+    <script>
+    document.querySelector('.navigation .ui-flyout').onclick = function() {
+      this.classList.toggle('is-open');
+    }
+    </script>
 </html>

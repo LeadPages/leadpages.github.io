@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  background-color: $lp-navy;
+
+  .navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    max-width: 1380px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    flex: 0 0 240px;
+    &__svg {
+      .a {
+        fill: $white;
+      }
+    }
+
+    &__text {
+      position: relative;
+      top: 3px;
+      color: $bgdark-primary-grey;
+      margin-left: 6px;
+    }
+  }
+
+  .navigation {
+    &__item {
+      display: none;
+      padding: 6px 12px;
+
+      @media (min-width: 35em) {
+        display: inline;
+      }
+    }
+
+    .ui-btn-plain {
+      @media (min-width: 35em) {
+        display: none;
+      }
+
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+}

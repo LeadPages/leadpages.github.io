@@ -1,0 +1,33 @@
+.thank-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 258px);
+
+  &__message {
+    max-width: 720px;
+    padding: 24px;
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+
+      @media (min-width: 35em) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-bottom: 0;
+    }
+
+    hr {
+      margin: 24px 0;
+    }
+
+    .email {
+      color: $bglight-secondary-grey;
+    }
+  }
+}

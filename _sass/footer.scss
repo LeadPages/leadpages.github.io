@@ -1,0 +1,17 @@
+.footer {
+  width: 100%;
+  padding: 42px;
+  background-color: $base-grey;
+  text-align: center;
+
+  .footer-logo {
+    margin-bottom: 12px;
+    .a {
+      fill: $lp-navy;
+    }
+  }
+
+  .copyright {
+    color: $bglight-secondary-grey;
+  }
+}
