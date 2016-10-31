@@ -49,32 +49,11 @@
   .callout-cards {
     padding: 72px 0;
 
-    .container {
-      max-width: 1172px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    .ui-callout-card {
+      transition: box-shadow 0.3s ease;
 
-    .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 204px;
-      padding: 24px 0;
-      margin-bottom: 24px;
-      border: 1px solid $bgdark-primary-grey;
-      border-radius: 3px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.33);
-
-      @media (min-width: 64em) {
-        margin-bottom: 0;
-      }
-
-      &__text,
-      &__button {
-        width: 100%;
-        max-width: 80%;
-        margin: 0 auto;
+      &:hover {
+        box-shadow: 0 12px 24px rgba(0,0,0,.23);
       }
     }
   }
