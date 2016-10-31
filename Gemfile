@@ -21,3 +21,5 @@ gem "minima"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
 end
+
+gem "octopress-autoprefixer", "2.0.0"
