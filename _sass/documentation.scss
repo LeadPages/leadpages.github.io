@@ -9,5 +9,8 @@
   iframe {
     width: 100%;
     height: 640px;
+
+    // this will need to be reworked if docs are migrated over
+    border-top: 1px solid $bgdark-primary-grey;
   }
 }
