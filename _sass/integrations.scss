@@ -51,4 +51,16 @@
   .integrations-map-image {
     width: 100%;
   }
+
+  .detail {
+    margin-bottom: 24px;
+
+    &__title {
+      font-size: 1.25rem;
+    }
+
+    &__text {
+      color: $bglight-secondary-grey;
+    }
+  }
 }
