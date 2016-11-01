@@ -36,6 +36,10 @@
       @media (min-width: 35em) {
         display: inline;
       }
+
+      &.is-active {
+        color: $white;
+      }
     }
 
     .ui-btn-plain {
