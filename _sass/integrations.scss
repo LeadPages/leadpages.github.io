@@ -16,6 +16,10 @@
 
     &:last-of-type {
       border-bottom: 0;
+
+      .ui-btn {
+        margin-top: 12px;
+      }
     }
 
     &--image {
