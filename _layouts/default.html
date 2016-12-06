@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{{ page.title }}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+        <link href='https://static.leadpages.net/fonts/akkurat_typeset.css' rel='stylesheet' type='text/css'>
+        <link href='https://static.leadpages.net/fonts/avantgarde_typeset.css' rel='stylesheet' type='text/css'>
+        <link href="https://static.leadpages.net/icons/v27/lp-icons.css" rel="stylesheet" type="text/css">
+        <link href="https://static.leadpages.net/lego/1.1.17/lego.min.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+    </body>
+    <script>
+    document.querySelector('.navigation .ui-flyout').onclick = function() {
+      this.classList.toggle('is-open');
+    }
+
+    var integrations = document.querySelector('.integrations');
+    var documentation = document.querySelector('.documentation');
+
+    if(integrations) {
+      document.querySelector('.integrations-link').classList.add('is-active');
+    } else if(documentation) {
+      document.querySelector('.documentation-link').classList.add('is-active');
+    }
+    </script>
+    <script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script>
+</html>
